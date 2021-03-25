@@ -21,5 +21,5 @@ RUN mkdir -p /etc/supervisor/conf.d/
 
 EXPOSE 5900
 
-COPY supervisor.conf /etc/supervisor/conf.d/supervisor.conf
-CMD ["/usr/local/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisor.conf"]
+COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+CMD ["/usr/local/bin/supervisord"]
