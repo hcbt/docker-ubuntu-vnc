@@ -21,5 +21,4 @@ RUN mkdir -p /etc/supervisor/conf.d/
 
 EXPOSE 5900
 
-COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
-CMD ["/usr/local/bin/supervisord"]
+COPY supervisord-vnc.conf /etc/supervisor/conf.d/supervisord-vnc.conf
